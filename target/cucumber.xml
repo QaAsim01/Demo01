@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="10.185">
+    <testcase classname="Appilcation LogIn" name="LogIn with valid credentials" time="0.089">
+        <system-out><![CDATA[Given user is on landing page...............................................passed
+When user enter "9403080677" and pass "Asim@1234"...........................passed
+Then homepage directed is "true"............................................passed
+Then validate the profile icon is displaying................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Appilcation LogIn" name="LogIn with invalid credentials" time="0.007">
+        <system-out><![CDATA[Given user is on landing page...............................................passed
+When user enter "9403080677" and pass "Asim@4321"...........................passed
+Then homepage directed is "fail"............................................passed
+And error message should displayed..........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Appilcation LogIn" name="LogIn with multiple credentials" time="0.005">
+        <system-out><![CDATA[Given user is on landing page...............................................passed
+When user enters 1234 and pass 4321.........................................passed
+Then validate the profile icon is displaying................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Appilcation LogIn" name="LogIn with multiple credentials 2" time="0.008">
+        <system-out><![CDATA[Given user is on landing page...............................................passed
+When user enters 4567 and pass 7654.........................................passed
+Then validate the profile icon is displaying................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Appilcation LogIn" name="LogIn with multiple credentials 3" time="0.006">
+        <system-out><![CDATA[Given user is on landing page...............................................passed
+When user enters 7890 and pass 0987.........................................passed
+Then validate the profile icon is displaying................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Appilcation LogIn" name="LogIn with multiple credentials 4" time="0.002">
+        <system-out><![CDATA[Given user is on landing page...............................................passed
+When user enters 1010 and pass 0101.........................................passed
+Then validate the profile icon is displaying................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="search and palce order" name="user should have both same search experience in both home and offers page" time="9.532">
+        <system-out><![CDATA[Given user is on greencart page landing page................................passed
+When when user search with search name "tom"................................passed
+Then user search "tom" shortname on offerspage..............................passed
+And validate product with both homepage and offerpage.......................passed
+]]></system-out>
+    </testcase>
+</testsuite>
